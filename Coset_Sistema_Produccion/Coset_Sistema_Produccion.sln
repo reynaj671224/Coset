@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coset_Sistema_Produccion", "Coset_Sistema_Produccion\Coset_Sistema_Produccion.csproj", "{013E7C38-2938-4392-9F40-76CB85C5A996}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Coset Sistema Produccion Instalacion", "Coset Sistema Produccion Instalacion\Coset Sistema Produccion Instalacion.vdproj", "{6091557B-2B2B-4AE7-BC7B-B5A30E4BE88F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{013E7C38-2938-4392-9F40-76CB85C5A996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013E7C38-2938-4392-9F40-76CB85C5A996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013E7C38-2938-4392-9F40-76CB85C5A996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013E7C38-2938-4392-9F40-76CB85C5A996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6091557B-2B2B-4AE7-BC7B-B5A30E4BE88F}.Debug|Any CPU.ActiveCfg = Debug
+		{6091557B-2B2B-4AE7-BC7B-B5A30E4BE88F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {376F5CEF-57C2-48E3-B333-31BACAC9D5C7}
+	EndGlobalSection
+EndGlobal

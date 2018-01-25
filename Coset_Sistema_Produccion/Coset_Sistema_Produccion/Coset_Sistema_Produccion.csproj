@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{013E7C38-2938-4392-9F40-76CB85C5A996}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coset_Sistema_Produccion</RootNamespace>
+    <AssemblyName>Coset_Sistema_Produccion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassContactos_Clientes.cs" />
+    <Compile Include="Class_Clientes.cs" />
+    <Compile Include="Class_Control_Folios.cs" />
+    <Compile Include="Class_Datos_Generales.cs" />
+    <Compile Include="Class_Usuarios.cs" />
+    <Compile Include="Forma_Datos_Generales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Datos_Generales.Designer.cs">
+      <DependentUpon>Forma_Datos_Generales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma_Pricipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Pricipal.Designer.cs">
+      <DependentUpon>Forma_Pricipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma_Inicio_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Inicio_Usuario.Designer.cs">
+      <DependentUpon>Forma_Inicio_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Usuarios.Designer.cs">
+      <DependentUpon>Forma_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Clientes.Designer.cs">
+      <DependentUpon>Forma_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forma_Datos_Generales.resx">
+      <DependentUpon>Forma_Datos_Generales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Pricipal.resx">
+      <DependentUpon>Forma_Pricipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Inicio_Usuario.resx">
+      <DependentUpon>Forma_Inicio_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Usuarios.resx">
+      <DependentUpon>Forma_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Clientes.resx">
+      <DependentUpon>Forma_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
